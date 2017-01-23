@@ -15,7 +15,8 @@ namespace week4._1
 
         protected string color;
 
-        private bool isGoodToEat;
+        protected bool isGoodToEat;
+       
 
         //default constructor ( Needed if you will add another sub-class )
         public Animal()

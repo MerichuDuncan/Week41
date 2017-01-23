@@ -17,8 +17,8 @@ namespace week4._1
 
             animal1.PrintAnimalInfo();
             animal2.PrintAnimalInfo();
-
-            Cat cat1 = new Cat("Grumpy", "Short", false);
+                                 // ( 4 parameters )
+            Cat cat1 = new Cat("Grumpy", "Short", false, "Grey\n\n");
             cat1.PrintAnimalInfo();
         }
     }
