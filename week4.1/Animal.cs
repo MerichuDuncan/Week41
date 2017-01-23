@@ -13,7 +13,7 @@ namespace week4._1
         private int size;
         private int weight;
 
-        private string color;
+        protected string color;
 
         private bool isGoodToEat;
 
