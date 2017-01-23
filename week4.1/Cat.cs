@@ -15,11 +15,12 @@ namespace week4._1
         private bool declawed;
 
         //constructor                                              calling the base(Animal) class constructor
-        public Cat(string breed, string furLength, bool declawed): base(4, 3, 3, "tan")
+        public Cat(string breed, string furLength, bool declawed, string color): base(4, 3, 3)
         {
             this.breed = breed;
             this.furLength = furLength;
             this.declawed = declawed;
+            this.color = color;
         }
 
     }
