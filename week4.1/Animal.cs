@@ -17,8 +17,13 @@ namespace week4._1
 
         private bool isGoodToEat;
 
-            //default constructor
+        //default constructor ( Needed if you will add another sub-class )
+        public Animal()
+        {
 
+        }
+
+         //default constructor
             public Animal( int legs, string color)
         {
             this.legs = legs;
@@ -48,7 +53,7 @@ namespace week4._1
         {
             Console.WriteLine("This animal has : " + legs + " number of legs");
             Console.WriteLine("It's size is : " + size);
-            Console.WriteLine("It weighs : " + weight);
+            Console.WriteLine("It's weighs is : " + weight);
             Console.WriteLine("And it's color is " + color);
         }
     }
