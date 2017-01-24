@@ -10,16 +10,25 @@ namespace week4._1
     {
         static void Main(string[] args)
         {
-            Animal animal1 = new Animal(2, "Tan\n\n");
-            Animal animal2 = new Animal(6, 1, 1, "\n\n");
-        
-
-
+            Animal animal1 = new Animal(2, "Tan");
+            Animal animal2 = new Animal(6, 1, 1);
+            
             animal1.PrintAnimalInfo();
+            Console.WriteLine();
             animal2.PrintAnimalInfo();
+            
+            Console.WriteLine();
                                  // ( 4 parameters )
-            Cat cat1 = new Cat("Grumpy", "Short", false, "Grey\n\n");
+            Cat cat1 = new Cat("Grumpy", "Short", false, "Grey");
             cat1.PrintAnimalInfo();
+            cat1.Speak();
+            Console.WriteLine();
+            
+
+            Fish fish1 = new Fish(5, true, true, "salt");
+            fish1.PrintAnimalInfo();
+            fish1.Swim();
+
         }
     }
 }

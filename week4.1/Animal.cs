@@ -57,6 +57,10 @@ namespace week4._1
             Console.WriteLine("It's weighs is : " + weight);
             Console.WriteLine("And it's color is " + color);
         }
+        protected void WhoAmI()
+        {
+            Console.WriteLine("I am an animal");
+        }
     }
 
 }
