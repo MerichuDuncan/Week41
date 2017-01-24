@@ -25,12 +25,13 @@ namespace week4._1
         }
 
          //default constructor
+         //2 arguments
             public Animal( int legs, string color)
         {
             this.legs = legs;
             this.color = color;
         }
-
+        //3 arguments
         public Animal( int legs, int size, int weight)
         {
             this.legs = legs;
@@ -39,6 +40,7 @@ namespace week4._1
 
         }
         //another constructor
+        //4 arguments
         public Animal( int legs, int size, int weight, string color )
 
         {
@@ -50,7 +52,8 @@ namespace week4._1
         }
 
         //method
-        public void PrintAnimalInfo()
+        
+        public virtual void PrintAnimalInfo()
         {
             Console.WriteLine("This animal has : " + legs + " number of legs");
             Console.WriteLine("It's size is : " + size);
@@ -61,6 +64,7 @@ namespace week4._1
         {
             Console.WriteLine("I am an animal");
         }
+       
     }
 
 }

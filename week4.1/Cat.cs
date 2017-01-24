@@ -15,6 +15,7 @@ namespace week4._1
         private bool declawed;
 
         //constructor                                             calling the base(Animal) class constructor
+        // 4 arguments 
         public Cat(string breed, string furLength, bool declawed, string color): base(4, 3, 3)
         {
             this.breed = breed;
@@ -25,9 +26,18 @@ namespace week4._1
         }
 
         //method
+        
         public void Speak()
         {
             Console.WriteLine("Meow!");
+        }
+        public override void PrintAnimalInfo()
+        {
+            Console.WriteLine("I am a cat. ");
+            base.PrintAnimalInfo();
+            Console.WriteLine("Breed is: " + breed + " cat");
+            Console.WriteLine("furLength is: " + furLength);
+            Console.WriteLine("Declawed: " + declawed);
         }
     }
 }

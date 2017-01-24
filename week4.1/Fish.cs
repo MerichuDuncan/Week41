@@ -17,6 +17,7 @@ namespace week4._1
 
 
         //default constructor
+        //4 arguments
         public Fish(int fins, bool scales, bool teeth, string waterType) : base(0, "silver")
         {
             this.fins = fins;
@@ -24,7 +25,18 @@ namespace week4._1
             this.teeth = teeth;
             this.waterType = waterType;
         }
+        //method
+        public override void PrintAnimalInfo()
+        {
 
+            Console.WriteLine("I am a fish");
+            base.PrintAnimalInfo();
+            Console.WriteLine("I have " + fins + " fins.");
+            Console.WriteLine("Do I have teeth? " + teeth);
+            Console.WriteLine("I live in " + waterType + " water");
+
+        }
+       
         public void Swim ()
         {
             Console.WriteLine("Just keep swimming, just keep swimming...");
